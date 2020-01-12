@@ -1,0 +1,4 @@
+FROM nginx
+
+#by sepcifying the default.conf file name, we are overriding the file may exist.
+COPY ./default.conf /etc/nginx/conf.d/default.conf  
