@@ -1,6 +1,7 @@
 FROM node:alpine
 
 WORKDIR '/app'
+# Added /client to the copy command for travis-ci.
 COPY ./client/package.json ./
 RUN npm install
 COPY . .
